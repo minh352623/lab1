@@ -1,0 +1,59 @@
+:root {
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --text-color-header:#ed4190;
+    --header-height:40px;
+    --header-height-main:50px;
+}
+
+*{
+    box-sizing: inherit;
+}
+.app {
+    overflow: hidden;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+  
+}
+
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    background-color: var(--white-color);
+    line-height: 1.6rem;
+    outline: none;
+}
+.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+}
+.btn.btn--nomal-hover:hover {
+    background-color: rgba(0, 0, 0,0.2);
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
+}
