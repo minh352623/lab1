@@ -1,0 +1,48 @@
+
+
+.address{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.address__img img {
+    object-fit:contain;
+    width:15px;
+    text-align: center;
+    margin:auto;
+}
+.address__img{
+    background-color: #cddc39;
+    display: flex;
+    width: 40px;
+    height: 30px;
+}
+.address  p {
+    margin-left:4px;
+    font-size:1.6rem;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-lh{
+    font-size:1.6rem;
+    padding:8px;
+    background-color:#cddc39;
+    color: var(--white-color);
+}
+select,
+input{
+    padding: 5px;
+    font-size:1.6rem;
+
+}
+#textarea{
+    padding:10px;
+}
+.submit{
+    position: relative;
+    left:35%;
+}

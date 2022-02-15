@@ -38,7 +38,7 @@ html{
 
 .img1 {
     position: absolute;
-    animation: img1 ease 0.5s;
+    animation: img1 ease 1s;
     left: 20%;
     top: 2%;
 
@@ -46,7 +46,7 @@ html{
 
 .img2 {
     position: absolute;
-    animation: img2 ease 0.5s;
+    animation: img2 ease 1s;
     left: 40%;
     top: 2%;
 
@@ -54,7 +54,7 @@ html{
 
 .img3 {
     position: absolute;
-    animation: img3 ease 0.5s;
+    animation: img3 ease 1s;
     left: 60%;
     top: 2%;
 
@@ -123,6 +123,12 @@ html{
 
     background-color: var(--white-color);
     border-radius: 4px;
+}
+.header__item:hover a{
+    color: var(--white-color);
+    background-color: var(--text-color-header);
+    border-radius: 4px;
+
 }
 
 .header__item-link {
