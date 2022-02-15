@@ -6,7 +6,7 @@ html{
     position: relative;
 }
 .header__backrgoud {
-    background-image: url('./assets/images/header.png');
+    background-image: url('./images/header.png');
     border-radius: 5px;
     padding: 0 10px;
     /* height:10rem; */
