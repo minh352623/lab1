@@ -1,0 +1,44 @@
+.product + .product{
+    
+    margin-top:30px;
+}
+.product{
+    padding-top:20px;
+}
+.product__title{
+    font-size:3rem;
+    text-align: center;
+}
+.product__header-center{
+    line-height:1.2;
+   
+}
+.product__header-left{
+    padding:0 16px;
+    font-size: 2rem;
+    justify-content:left;
+    align-items:default;
+}
+h2{
+    margin-top:0;
+}
+.product__img  {
+    width:300px;
+}
+.product__img  img{
+
+    object-fit:contain
+}
+.product__info {
+    display: flex;
+}
+
+.product__img  img{
+
+    object-fit:contain
+}
+
+.product__info p {
+    padding:0 16px;
+    text-align:justify;
+}
