@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
-    <link rel="stylesheet" href="./assets/base.css">
+    <!-- <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/grid.css">
     <link rel="stylesheet" href="./assets/main.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/responsive.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
     <title>Trang Chủ</title>
@@ -74,23 +74,20 @@
                             </ul>
                         </div>
 
-                        <form action="timkiem.html" class="header-navbar__right form-search" >
+                        <div class="header-navbar__right">
                             <div class="header-input">
-                                <input type="text" class="input-search" submit placeholder="Nhập để tim kiếm...">
+                                <input type="text" placeholder="Nhập để tim kiếm...">
                             </div>
                             <div class="header-icon">
-                                <button type="submit">
+                                <a href="#" class="header-icon__search">
+                                    <i class="fas fa-search"></i>
 
-                                    <a href="#" class="header-icon__search">
-                                        <i class="fas fa-search"></i>
-    
-                                    </a>
-                                </button>
+                                </a>
                                 <a class="header-icon__cart">
                                     <i class="fas fa-shopping-cart"></i>
                                 </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,7 +271,6 @@
            <img src="./assets/images/top.png" alt="">
         </a>
     </div>
-    <script src="./js/app.js"></script>
 </body>
 
 </html>

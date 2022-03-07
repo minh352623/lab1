@@ -6,17 +6,7 @@ html{
     position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-button{
-    border: none;
-}
-.header.is-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-    animation: fade 0.25s forwards 1;
-  }
+
 .header__backrgoud {
     background-image: url('./images/header.png');
     border-radius: 5px;
@@ -25,7 +15,7 @@ button{
     overflow: hidden;
     display: block;
     position: relative;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .header__logo {
