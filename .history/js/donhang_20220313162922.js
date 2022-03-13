@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
 
   let Listitem =[];
 //     localStorage.length > 0 ? JSON.parse(localStorage.getItem("Listitem")) : [];
-  //render ra table
+  //render ra 
   function renderItem(item) {
     const tr = document.createElement("tr");
     const td1 = document.createElement("td");

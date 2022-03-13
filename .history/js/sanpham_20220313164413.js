@@ -204,7 +204,7 @@ window.addEventListener("load", function () {
     }
   }
   cart();
-  console.log([...itemsCart]);
+  console.log(itemsCart);
 
 
 });
