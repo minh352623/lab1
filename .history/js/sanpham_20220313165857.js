@@ -122,8 +122,7 @@ window.addEventListener("load", function () {
     const item = items[i];
     product[i].insertAdjacentHTML("beforeend", renderItem(item));
   }
-  let itemsCart =[];
-    // localStorage.length > 0 ?JSON.parse(localStorage.getItem("Listitem")): [];
+  let itemsCart =localStorage.length > 0 ?JSON.parse(localStorage.getItem("Listitem")): [];
   //đăt Hàng
   function cart(){
     window.onstorage = () => {
