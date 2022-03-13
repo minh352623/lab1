@@ -154,7 +154,7 @@ window.addEventListener("load", function () {
               }
                 let index =-1;
                 console.log(itemsCart);
-                if(Array.from(itemsCart).length>0){
+                if(itemsCart.length>0){
 
                   index = itemsCart.findIndex((item) => item.id === list.id);
                   console.log(index);
