@@ -123,7 +123,7 @@ window.addEventListener("load", function () {
     product[i].insertAdjacentHTML("beforeend", renderItem(item));
   }
   let itemsCart =[];
-    // localStorage.length > 0 ?JSON.parse(localStorage.getItem("Listitem")): [];
+    localStorage.length > 0 ?JSON.parse(localStorage.getItem("Listitem")): [];
   //đăt Hàng
   function cart(){
     window.onstorage = () => {
