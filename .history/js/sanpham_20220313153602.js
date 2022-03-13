@@ -152,12 +152,16 @@ window.addEventListener("load", function () {
                  number : +this.querySelector(".number").value,
                  price : (this.querySelector(".price").textContent).trim(),
               }
-                let index =-1;
+              // if(itemsCart.length===0){
+              //   itemsCart.push(list);
+              //   return; 
+              // }
+              //đơn hàng đã có trong giỏ hàng
+              // if(itemsCart.length>0){
+                let index ;
                 if(itemsCart.length>0){
-
-                  index = itemsCart.findIndex((item) => item.id === list.id);
-                  console.log(index);
-                }
+                let index = itemsCart.findIndex((item) => item.id === list.id);
+                console.log(index);
                 
                 if(index > -1){
                   let newnumber = itemsCart[index].number + list.number;
@@ -170,7 +174,7 @@ window.addEventListener("load", function () {
                   
                   isSubmit = true;
                   
-                }else if(index >= -1 || itemsCart.length >0){
+                }else if({
 
                   itemsCart.push(list);
                 }
