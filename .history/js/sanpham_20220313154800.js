@@ -153,7 +153,7 @@ window.addEventListener("load", function () {
                  price : (this.querySelector(".price").textContent).trim(),
               }
                 let index =-1;
-                if([...itemsCart].length>0){
+                if(.length>0){
 
                   index = itemsCart.findIndex((item) => item.id === list.id);
                   console.log(index);
