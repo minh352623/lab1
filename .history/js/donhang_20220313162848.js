@@ -17,7 +17,6 @@ window.addEventListener("load", function () {
 
   let Listitem =[];
 //     localStorage.length > 0 ? JSON.parse(localStorage.getItem("Listitem")) : [];
-  //render ra table
   function renderItem(item) {
     const tr = document.createElement("tr");
     const td1 = document.createElement("td");
@@ -52,7 +51,7 @@ window.addEventListener("load", function () {
     renderCart();
   };
   //   let sum = 0;
-  //show sản phẩm đã thêm vào giỏ hàng
+  //show 
   function renderCart() {
     Listitem =
     localStorage.length > 0 ? JSON.parse(localStorage.getItem("Listitem")) : [];

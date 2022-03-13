@@ -153,16 +153,15 @@ window.addEventListener("load", function () {
                  price : (this.querySelector(".price").textContent).trim(),
               }
                 let index =-1;
-                console.log(itemsCart);
                 if([...itemsCart].length>0){
 
-                  index = [...itemsCart].findIndex((item) => item.id === list.id);
+                  index = itemsCart.findIndex((item) => item.id === list.id);
                   console.log(index);
                 }
                 
                 if(index > -1){
-                  let newnumber = [...itemsCart][index].number + list.number;
-                  [...itemsCart][index].number = newnumber;
+                  let newnumber = itemsCart[index].number + list.number;
+                  itemsCart[index].number = newnumber;
   
                   // window.localStorage.setItem("Listitem",JSON.stringify(itemsCart));
   
@@ -171,11 +170,11 @@ window.addEventListener("load", function () {
                   
                   isSubmit = true;
                   
-                }else if(index <= -1 || [...itemsCart].length <1){
+                }else if(index >= -1 || itemsCart.length >0){
 
-                  [...itemsCart].push(list);
+                  itemsCart.push(list);
                 }
-                window.localStorage.setItem("Listitem",JSON.stringify([...itemsCart]));
+                window.localStorage.setItem("Listitem",JSON.stringify(itemsCart));
                 this.querySelector(".number").value= "";
                 alert("đã thêm vào giỏ hàng!");
               // }
@@ -204,7 +203,7 @@ window.addEventListener("load", function () {
     }
   }
   cart();
-  console.log([...itemsCart]);
+  console.log(typeof null);
 
 
 });

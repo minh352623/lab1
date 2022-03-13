@@ -175,7 +175,7 @@ window.addEventListener("load", function () {
 
                   [...itemsCart].push(list);
                 }
-                window.localStorage.setItem("Listitem",JSON.stringify([...itemsCart]));
+                window.localStorage.setItem("Listitem",JSON.stringify(itemsCart));
                 this.querySelector(".number").value= "";
                 alert("đã thêm vào giỏ hàng!");
               // }
@@ -204,7 +204,7 @@ window.addEventListener("load", function () {
     }
   }
   cart();
-  console.log([...itemsCart]);
+  console.log(itemsCart);
 
 
 });
