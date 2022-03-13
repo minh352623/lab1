@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./assets/base.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/grid.css"> -->
+    <link rel="stylesheet" href="./assets/main.css">
+    <!-- <link rel="stylesheet" href="./assets/dangky.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/responsive.css"> -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <title>Đăng Kí</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- header -->
+        <div class="header">
+            <div class="grid wide">
+                <div class="header__backrgoud">
+
+                    <a href="index.html" class="header__logo">
+                        <img src="./assets/images/logo.png" alt="">
+                    </a>
+                    <div class="header__three-img">
+
+                        <a href="#" class="header__img img1">
+                            <img src="./assets/images/header-img1.png" alt="">
+                        </a>
+                        <a href="#" class="header__img img2">
+                            <img src="./assets/images/header-img2.png" alt="">
+                        </a>
+                        <a href="#" class="header__img img3">
+                            <img src="./assets/images/header-img3.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header-navbar">
+                        <div class="header-navbar__left">
+                            <ul style="display: flex; list-style: none;padding: 0;" class="header__list">
+                                <li class="header__item">
+                                    <a href="./index.html" class="header__item-link">Trang Chủ</a>
+
+                                </li>
+                                <li class="header__item">
+                                    <a href="./gioithieu.html" class="header__item-link">Giới Thiệu </a>
+
+                                </li>
+                                <li class="header__item">
+                                    <a href="./sanpham.html" class="header__item-link">Sản Phẩm</a>
+
+                                </li>
+                                <li class="header__item">
+                                    <a href="./tintuc.html" class="header__item-link">Tin Tức</a>
+
+                                </li>
+                                <li class="header__item">
+                                    <a href="./dangnhap.html" class="header__item-link">Đăng Nhập</a>
+
+                                </li>
+                                <li class="header__item">
+                                    <a href="./dangky.html" class="header__item-link">Đăng Kí</a>
+
+                                </li>
+                                <li class="header__item">
+                                    <a href="./lienhe.html" class="header__item-link">Liên Hệ</a>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+
+                        <form action="timkiem.html" class="header-navbar__right form-search" >
+                            <div class="header-input">
+                                <input type="text" class="input-search" submit placeholder="Nhập để tim kiếm...">
+                            </div>
+                            <div class="header-icon">
+                                <button type="submit">
+
+                                    <a href="#" class="header-icon__search">
+                                        <i class="fas fa-search"></i>
+    
+                                    </a>
+                                </button>
+                                <a class="header-icon__cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- main -->
+        <div class="main">
+            <article class="grid wide">
+
+                <form action="">
+
+                    <fieldset class="container">
+                        <h1 class="product__title">Đăng Ký</h1>
+                        <!-- <legend><b>ĐẮNG KÝ</b></legend> -->
+
+                        <table class="registration">
+                            <tr>
+                                <td>
+                                    <label for="email">
+                                        <i class="icon-lh fas fa-envelope-square"></i>
+                                    </label>
+                                    <input id="email" type="text" placeholder="Vui lòng nhập email..">
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                
+                                <td>
+                                    <label for="mk">
+                                        <!-- <b>Mật Khẩu</b> -->
+                                        <i class="icon-lh fas fa-key"></i>
+                                    </label>
+                                    <input id="mk" type="password" placeholder="Vui lòng nhập password..">
+                                </td>
+                            </tr>
+                            <tr >
+                                
+                                
+                                <td>
+                                    <label for="nhaplai">
+                                        <!-- <b>Nhập Lại Mật Khẩu</b> -->
+                                        <i class="icon-lh fas fa-key"></i>
+    
+                                    </label>
+                                    <input id="nhaplai" type="password" placeholder="Vui lòng nhập lại password..">
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                
+                                <td>
+                                    <label for="capdo">
+                                        <!-- <b>Cấp độ thành viên</b> -->
+                                        <i class="icon-lh fas fa-users"></i>
+                                    </label>
+                                    <input id="capdo" type="radio" name="radio" 1>
+                                    <span>
+
+                                        <b>Bạc</b>
+                                    </span>
+                                    <input id="capdo" type="radio" name="radio">
+                                    <span>
+
+                                        <b>Vàng</b>
+                                    </span>
+                                    <input id="capdo" type="radio" name="radio">
+                                    <span>
+
+                                        <b>Bạch Kim</b>
+                                    </span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                
+                                <td>
+                                    <label for="anh">
+                                        <!-- <b>Ảnh Đại Diện</b> -->
+                                        <i class="icon-lh fas fa-user-tag"></i>
+                                    </label>
+                                    <input id="anh" type="file">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p> <b>Thông qua việc tạo tài khoản, bạn đồng ý với</b><a href="#">Điều khoản &
+                                            Quyền
+                                            riêng tư của chúng tôi.</a> </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="reset" value="Hủy">
+                                    <input type="button" value="Đăng Kí">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                </form>
+
+            </article>
+
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="license">
+                    <span><b>© 2021 Bản quyền thuộc về FreeezeVN.</b></span>
+                    <a href="">
+
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+                <a href="#" class="scoll">
+
+                    <img src="./assets/images/top.png" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

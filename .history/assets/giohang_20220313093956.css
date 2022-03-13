@@ -1,0 +1,24 @@
+.product__title{
+    font-size:4rem;
+}
+.oder{
+    width: 100%;
+}
+th,td{
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+}
+.col-1{
+    width: 50px;
+}
+.col-1 img{
+    object-fit: cover;
+    width:100%; 
+    height:100%;
+
+}
+
+.table-text-right{
+    
+    text-align: right;
+}
