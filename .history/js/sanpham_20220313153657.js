@@ -152,6 +152,12 @@ window.addEventListener("load", function () {
                  number : +this.querySelector(".number").value,
                  price : (this.querySelector(".price").textContent).trim(),
               }
+              // if(itemsCart.length===0){
+              //   itemsCart.push(list);
+              //   return; 
+              // }
+              //đơn hàng đã có trong giỏ hàng
+              // if(itemsCart.length>0){
                 let index =-1;
                 if(itemsCart.length>0){
 
