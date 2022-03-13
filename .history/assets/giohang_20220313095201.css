@@ -1,0 +1,38 @@
+.product__title{
+    font-size:4rem;
+}
+.oder{
+    width: 100%;
+}
+th,td{
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+}
+.col-1{
+    width: 15%;
+}
+.col-1 img{
+    object-fit: cover;
+    width:100%; 
+    height:100%;
+
+}
+
+.table-text-right{
+    
+    text-align: right;
+}
+
+.icon{
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:4px;
+    
+}
+.icon:hover{
+    color: #FF6651;
+    background-color:#ff655157
+}
