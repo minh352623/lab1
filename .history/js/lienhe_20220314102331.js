@@ -1,0 +1,104 @@
+window.addEventListener("load", function () {
+  const form = document.querySelector(".registration");
+  
+  const inputemail = document.querySelector(".email");
+  const inputpassword = document.querySelector(".password");
+  const inputs = document.querySelectorAll(".input");
+  const textarea = document.querySelector(".textarea");
+
+  let isEmail = false;
+  let isName = false;
+  let isTextarea = false;
+  let valuePass;
+
+  function checkForm() {
+    inputemail.addEventListener("input", function (e) {
+      const value = e.target.value;
+      // console.log(value);
+      const regex =
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+      if (regex.test(value.trim())) {
+        this.classList.add("valid");
+        this.classList.remove("invalid");
+        isEmail = true;
+      } else {
+        this.classList.remove("valid");
+        this.classList.add("invalid");
+        isEmail = false;
+      }
+      if (!value) {
+        this.classList.remove("invalid");
+        isEmail = false;
+      }
+    });
+    textarea.addEventListener("change", function (e) {
+      const value = e.target.value;
+    //   console.log(value);
+      if (value.length > 10) {
+        this.classList.add("valid");
+        this.classList.remove("invalid");
+        isName = true;
+      } else {
+        this.classList.remove("valid");
+        this.classList.add("invalid");
+        isName = false;
+      }
+      if (!value) {
+        this.classList.remove("invalid");
+        isName = false;
+      }
+      if (!isName) {
+        alert("nội dung phản hồi ít nhất 10 kí tự");
+      }
+    });
+    inputpassword.addEventListener("change", function (e) {
+        valuePass = e.target.value;
+        // console.log(valuePass);
+        if (valuePass.length > 4) {
+          this.classList.add("valid");
+          this.classList.remove("invalid");
+          isTextarea = true;
+        } else {
+          this.classList.remove("valid");
+          this.classList.add("invalid");
+          isTextarea = false;
+        }
+        if (!valuePass) {
+          this.classList.remove("invalid");
+          isTextarea = false;
+        }
+        if (!isTextarea) {
+          alert("tên ít nhất 4 kí tự");
+        }
+      });
+  }
+  checkForm();
+  form.addEventListener("submit", function (event) {
+    // checkForm();
+    event.preventDefault();
+
+    if (isEmail && isName && isTextarea) {
+        console.log("submit");
+        // console.log(valuePass);
+        
+        this.submit();
+      this.reset();
+      inputs.forEach((icon) => {
+        icon.classList.remove("valid");
+        icon.classList.remove("invalid");
+      });
+
+      alert("đã đăng kí thành công");
+    } else {
+
+
+      this.reset();
+      inputs.forEach((icon) => {
+        icon.classList.remove("valid");
+        icon.classList.remove("invalid");
+      });
+      alert("Gửi phản hồi không thành công");
+    }
+  });
+});
