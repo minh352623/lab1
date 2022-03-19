@@ -1,0 +1,16 @@
+
+
+
+.icon-lh{
+    font-size:1.6rem;
+    padding:8px;
+    background-color:#cddc39;
+    color: var(--white-color);
+}
+span,
+input{
+    font-size:1.6rem;
+}
+p{
+    font-size:1.6rem;
+}

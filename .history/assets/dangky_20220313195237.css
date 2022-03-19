@@ -1,0 +1,56 @@
+
+.registration{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.email-input,
+.password-input,
+.password-repeat,
+.rank-input,
+.avatar-input,
+.info-input,
+.submit-input{
+    width:30%;
+    display: flex;
+    justify-content:space-between;
+}
+.email-input label,
+.password-input label,
+.password-repeat label,
+.rank-input label,
+.avatar-input label,
+.info-input label,
+.submit-input label{
+    width:20%;
+    flex: center;
+}
+.email-input input,
+.password-input input,
+.password-repeat input,
+.rank-input input,
+.avatar-input input,
+.info-input input,
+.submit-input input{
+    /* width:80%; */
+    flex: 1;
+}
+.product__title {
+    text-align: center;
+    font-size:3rem;
+
+}
+.icon-lh{
+    font-size:1.6rem;
+    padding:8px;
+    background-color:#cddc39;
+    color: var(--white-color);
+}
+span,
+input{
+    font-size:1.6rem;
+}
+p{
+    font-size:1.6rem;
+}
