@@ -90,6 +90,7 @@
               <form
                 action="timkiem.html"
                 class="header-navbar__right form-search"
+                mothod="get"
               >
                 <div class="header-input">
                   <input
@@ -118,112 +119,98 @@
       <!-- main -->
       <div class="main">
         <article class="grid wide">
-            <div class="container">
-              <h1 class="product__title product__header-center">Đăng Ký</h1>
-              <!-- <legend><b>ĐẮNG KÝ</b></legend> -->
+          <div class="container">
+            <h1 class="product__title product__header-center">Đăng Ký</h1>
+            <!-- <legend><b>ĐẮNG KÝ</b></legend> -->
 
-              <form class="registration" action="#" mothod="post">
-                <div class="email-input">
-
-                    <label for="email">
-                      <i class="icon-lh fas fa-envelope-square"></i>
-                    </label>
-                    <input
-                      class="input email "
-                      id="email"
-                      type="text"
-                      placeholder="Vui lòng nhập email.."
-
-                    />
-                    <div class="input-icons">
-                        <i class="fa fa-check"></i>
-                        <i class="fa fa-times"></i>
-                      </div>
+            <form class="registration" action="#" mothod="post">
+              <div class="email-input">
+                <label for="email">
+                  <i class="icon-lh fas fa-envelope-square"></i>
+                </label>
+                <input
+                  class="input email"
+                  id="email"
+                  type="text"
+                  placeholder="Vui lòng nhập email.."
+                />
+                <div class="input-icons">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-times"></i>
                 </div>
+              </div>
 
-                <div class="password-input">
-
-                    <label for="mk">
-                      <!-- <b>Mật Khẩu</b> -->
-                      <i class="icon-lh fas fa-key"></i>
-                    </label>
-                    <input
-                      class="input password "
-                      id="password"
-                      type="password"
-                      placeholder="Vui lòng nhập password.."
-                    />
-                    <div class="input-icons">
-                        <i class="fa fa-check"></i>
-                        <i class="fa fa-times"></i>
-                    </div>
-                    
+              <div class="password-input">
+                <label for="mk">
+                  <!-- <b>Mật Khẩu</b> -->
+                  <i class="icon-lh fas fa-key"></i>
+                </label>
+                <input
+                  class="input password"
+                  id="password"
+                  type="password"
+                  placeholder="Vui lòng nhập password.."
+                />
+                <div class="input-icons">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-times"></i>
                 </div>
-                
+              </div>
 
-                    <div class="password-repeat">
+              <div class="password-repeat">
+                <label for="nhaplai">
+                  <!-- <b>Nhập Lại Mật Khẩu</b> -->
+                  <i class="icon-lh fas fa-key"></i>
+                </label>
+                <input
+                  class="password-repeat-c input"
+                  id="password-repeat"
+                  type="password"
+                  placeholder="Vui lòng nhập lại password.."
+                />
+                <div class="input-icons">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-times"></i>
+                </div>
+              </div>
+              <div class="rank-input">
+                <label for="capdo">
+                  <!-- <b>Cấp độ thành viên</b> -->
+                  <i class="icon-lh fas fa-users"></i>
+                </label>
+                <input id="capdo" type="radio" name="radio" 1 />
+                <span>
+                  <b>Bạc</b>
+                </span>
+                <input id="capdo" type="radio" name="radio" />
+                <span>
+                  <b>Vàng</b>
+                </span>
+                <input id="capdo" type="radio" name="radio" />
+                <span>
+                  <b>Bạch Kim</b>
+                </span>
+              </div>
+              <div class="avatar-input">
+                <label for="anh">
+                  <!-- <b>Ảnh Đại Diện</b> -->
+                  <i class="icon-lh fas fa-user-tag"></i>
+                </label>
+                <input id="anh" type="file" />
+              </div>
 
-                        <label for="nhaplai">
-                          <!-- <b>Nhập Lại Mật Khẩu</b> -->
-                          <i class="icon-lh fas fa-key"></i>
-                        </label>
-                        <input
-                          class="password-repeat-c input"
-                          id="password-repeat"
-                          type="password"
-                          placeholder="Vui lòng nhập lại password.."
-                        />
-                        <div class="input-icons">
-                            <i class="fa fa-check"></i>
-                            <i class="fa fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="rank-input">
-
-                        <label for="capdo">
-                          <!-- <b>Cấp độ thành viên</b> -->
-                          <i class="icon-lh fas fa-users"></i>
-                        </label>
-                        <input  id="capdo" type="radio" name="radio" 1 />
-                        <span>
-                          <b>Bạc</b>
-                        </span>
-                        <input  id="capdo" type="radio" name="radio" />
-                        <span>
-                          <b>Vàng</b>
-                        </span>
-                        <input  id="capdo" type="radio" name="radio" />
-                        <span>
-                          <b>Bạch Kim</b>
-                        </span>
-                    </div>
-                    <div class="avatar-input">
-
-                        <label for="anh">
-                          <!-- <b>Ảnh Đại Diện</b> -->
-                          <i class="icon-lh fas fa-user-tag"></i>
-                        </label>
-                        <input  id="anh" type="file" />
-                    </div>
-
-                    <div class="info-input">
-
-                        <p>
-                          <b>Thông qua việc tạo tài khoản, bạn đồng ý với</b
-                          ><a href="#"
-                            >Điều khoản & Quyền riêng tư của chúng tôi.</a
-                          >
-                        </p>
-                    </div>
-                    <div class="submit-input">
-
-                        <input type="reset" value="Hủy" >
-                        <input  type="submit" value="Đăng Kí" >
-                    </div>
-                  
-                
-              </form>
-            </div>
+              <div class="info-input">
+                <p>
+                  <b>Thông qua việc tạo tài khoản, bạn đồng ý với</b
+                  ><a href="#">Điều khoản & Quyền riêng tư của chúng tôi.</a>
+                </p>
+              </div>
+              <div class="submit-input">
+                <input type="reset" value="Hủy" />
+                <input type="submit" value="Đăng Kí" />
+              </div>
+            </form>
+          </div>
         </article>
       </div>
 
