@@ -15,8 +15,8 @@ window.addEventListener("load", function () {
   const monbeyT = document.querySelector(".money-tax");
   const moneyLast = document.querySelector(".money-dh");
 
-  let Listitem =[];
-//     localStorage.length > 0 ? JSON.parse(localStorage.getItem("Listitem")) : [];
+  let Listitem = [];
+  //     localStorage.length > 0 ? JSON.parse(localStorage.getItem("Listitem")) : [];
   //render ra table
   function renderItem(item) {
     const tr = document.createElement("tr");
@@ -31,10 +31,10 @@ window.addEventListener("load", function () {
     td3.textContent = item.number;
 
     const td4 = document.createElement("td");
-    td4.textContent = item.price + "đ";
+    td4.textContent = formatMoney(item.price);
 
     const td5 = document.createElement("td");
-    td5.textContent = +item.number * item.price + "đ";
+    td5.textContent = formatMoney(+item.number * item.price);
 
     const td6 = document.createElement("td");
     td6.setAttribute("data-id", item.id);
@@ -47,24 +47,23 @@ window.addEventListener("load", function () {
   }
 
   window.onstorage = () => {
-    
-
     renderCart();
+    console.log("thay doi");
   };
   //   let sum = 0;
   //show sản phẩm đã thêm vào giỏ hàng
   function renderCart() {
     Listitem =
-    localStorage.length > 0 ? JSON.parse(localStorage.getItem("Listitem")) : [];
+      localStorage.length > 0
+        ? JSON.parse(localStorage.getItem("Listitem"))
+        : [];
     tbody.innerHTML = "";
     if (Array.isArray(Listitem) && Listitem.length > 0) {
       [...Listitem].forEach((item) => {
         renderItem(item);
         sumMoney();
-
       });
     }
-
   }
 
   renderCart();
@@ -74,19 +73,20 @@ window.addEventListener("load", function () {
     if (Array.isArray(Listitem) && Listitem.length > 0) {
       let sum = 0;
       [...Listitem].forEach((item) => {
-        sum += (+item.number) * item.price;
+        sum += +item.number * item.price;
       });
 
-      sumMOney.textContent = sum + " đ";
-      moneyck.textContent = +sum * 0.1 + " đ";
-      monbeyT.textContent = 0.1 * (sum - +sum * 0.1) + " đ";
-      moneyLast.textContent =
-        sum - +sum * 0.1 + 0.1 * (sum - +sum * 0.1) + " đ";
-    }else if(Listitem.length <1){
-        sumMOney.textContent = "0";
-        moneyck.textContent ="0" ;
-        monbeyT.textContent = "0";
-        moneyLast.textContent ="0";
+      sumMOney.textContent = formatMoney(sum);
+      moneyck.textContent = formatMoney(+sum * 0.1);
+      monbeyT.textContent = formatMoney(0.1 * (sum - +sum * 0.1));
+      moneyLast.textContent = formatMoney(
+        sum - +sum * 0.1 + 0.1 * (sum - +sum * 0.1)
+      );
+    } else if (Listitem.length < 1) {
+      sumMOney.textContent = "0";
+      moneyck.textContent = "0";
+      monbeyT.textContent = "0";
+      moneyLast.textContent = "0";
     }
   }
   //reomve cartitems
